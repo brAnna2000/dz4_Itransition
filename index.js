@@ -8,4 +8,4 @@ function preview(token){
     });
 }
 let div = document.getElementById('uLogin_33673656');
-div.addEventListener('click', preview(token));
+div.addEventListener('click', preview);

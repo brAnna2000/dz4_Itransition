@@ -8,5 +8,5 @@ function preview(token){
     });
     window.location.href = 'next.html';
 }
-let div = document.getElementById('uLogin_33673656');
-div.addEventListener('click', preview);
+// let div = document.getElementById('uLogin_33673656');
+// div.addEventListener('click', preview);

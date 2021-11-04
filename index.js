@@ -6,6 +6,7 @@ function preview(token){
             alert("Привет, "+data.first_name+" "+data.last_name+"!");
         }
     });
+    window.location.href = 'next.html';
 }
 let div = document.getElementById('uLogin_33673656');
 div.addEventListener('click', preview);

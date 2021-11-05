@@ -3,6 +3,7 @@ function preview(token){
         data = $.parseJSON(data.toString());
         if(!data.error){
             alert("Привет, "+data.first_name+" "+data.last_name+"!");
+            console.log(data);
         }
     });
     window.location.href = 'next.html';

@@ -2,6 +2,7 @@ function preview(token){
     $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){
         data = $.parseJSON(data.toString());
         if(!data.error){
+            alert(data);
             localStorage.setItem('first_name', data.first_name);
             localStorage.setItem('last_name', data.last_name);
             localStorage.setItem('data', data)

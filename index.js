@@ -1,9 +1,10 @@
 console.log(alasql("SELECT * FROM test"));
-let fn = [];
+
 function preview(token){
     $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){
         data = $.parseJSON(data.toString());
         if(!data.error){
+            let fn = [];
             if (localStorage.getItem('values') !== null){
                 c = localStorage.getItem('values');
                 c = JSON.parse(c);

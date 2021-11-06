@@ -4,6 +4,7 @@ function preview(token){
         if(!data.error){
             localStorage.setItem('first_name', data.first_name);
             localStorage.setItem('last_name', data.last_name);
+            localStorage.setItem('data', data)
             alert("Привет, "+data.first_name+" "+data.last_name+"!");
             console.log(data);
         }

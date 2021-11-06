@@ -28,7 +28,10 @@
     <script src="https://cdn.jsdelivr.net/npm/alasql@1.7"></script>
     <script src="alasql.js"></script>
 <script>
-    console.log(localStorage.getItem(first_name));
+    let info = {
+        firstName: localStorage.getItem(first_name);
+    }
+    console.log(info);
     alasql("CREATE TABLE IF NOT EXISTS test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
     alasql(`INSERT INTO test VALUES (${alasql('SELECT max(id) FROM test') + 1},${localStorage.getItem(first_name)},${localStorage.getItem(last_name)},${localStorage.getItem(email)},${localStorage.getItem(country)})`);
 //     if (!alasql("SELECT * FROM test").error){

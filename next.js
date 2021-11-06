@@ -1,4 +1,4 @@
-[...document.querySelectorAll('buttons')].forEach(function(item) {
+[...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {
       console.log(item.innerHTML);
     });

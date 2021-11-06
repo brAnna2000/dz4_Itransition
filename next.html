@@ -33,6 +33,7 @@
     
     alasql(`INSERT INTO test VALUES (${id},${JSON.stringify(localStorage.getItem('first_name'))},${JSON.stringify(localStorage.getItem('last_name'))},${JSON.stringify(localStorage.getItem('email'))},${JSON.stringify(localStorage.getItem('country'))})`);
     console.log(alasql("SELECT * FROM test"));
+    console.log(alasql.tables.test.data);
 
 </script>
 </body>

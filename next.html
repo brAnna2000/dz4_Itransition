@@ -31,7 +31,7 @@
     alasql("CREATE TABLE test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
     alasql("INSERT INTO test VALUES (1,'Олег','Сульжич','olegsulzich@gmail.com','Беларусь')");
     alasql("INSERT INTO test VALUES (2,'Вероника','Иодковская','veronikaiodkovskaya@gmail.com','Беларусь')");
-    console.log( alasql("SELECT * FROM test") );
+    console.log( alasql("SELECT * FROM test").length );
 </script>
 </body>
 </html>

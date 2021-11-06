@@ -10,7 +10,9 @@ let list;
 if(list.length > 0){
   list.push(info)}
 else{
-  list = [];}
+  list = [];
+  list.push(info);
+}
 
 
 // [...document.querySelectorAll('button')].forEach(function(item) {

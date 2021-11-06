@@ -28,10 +28,19 @@
     <script src="https://cdn.jsdelivr.net/npm/alasql@1.7"></script>
     <script src="alasql.js"></script>
 <script>
-    alasql("CREATE TABLE test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
-    alasql("INSERT INTO test VALUES (1,'Олег','Сульжич','olegsulzich@gmail.com','Беларусь')");
-    alasql("INSERT INTO test VALUES (2,'Вероника','Иодковская','veronikaiodkovskaya@gmail.com','Беларусь')");
-    console.log( alasql("SELECT * FROM test").length );
+    if (alasql("SELECT * FROM test").length > 0){
+        alasql(`INSERT INTO test VALUES (${localStorage.getItem(first_name)},${localStorage.getItem(last_name)},${localStorage.getItem(email)},${localStorage.getItem(country)})`);
+    }
+    else{
+        alasql("CREATE TABLE test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
+        alasql("INSERT INTO test VALUES (1,'Олег','Сульжич','olegsulzich@gmail.com','Беларусь')");
+        alasql("INSERT INTO test VALUES (2,'Вероника','Иодковская','veronikaiodkovskaya@gmail.com','Беларусь')");
+    }
+    console.log(alasql("SELECT * FROM test"));
+//     alasql("CREATE TABLE test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
+//     alasql("INSERT INTO test VALUES (1,'Олег','Сульжич','olegsulzich@gmail.com','Беларусь')");
+//     alasql("INSERT INTO test VALUES (2,'Вероника','Иодковская','veronikaiodkovskaya@gmail.com','Беларусь')");
+//     console.log( alasql("SELECT * FROM test").length );
 </script>
 </body>
 </html>

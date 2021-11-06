@@ -33,7 +33,7 @@
 //     };
 //     console.log(info);
     alasql("CREATE TABLE IF NOT EXISTS test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
-    alasql(`INSERT INTO test VALUES (${alasql('SELECT max(id) FROM test') + 1},${localStorage.getItem('first_name')},${localStorage.getItem('last_name')},${localStorage.getItem('email')},${localStorage.getItem('country')})`);
+    alasql(`INSERT INTO test VALUES (${alasql('SELECT MAX('id') FROM test') + 1},${localStorage.getItem('first_name')},${localStorage.getItem('last_name')},${localStorage.getItem('email')},${localStorage.getItem('country')})`);
 //     if (!alasql("SELECT * FROM test").error){
 //         alasql(`INSERT INTO test VALUES (${alasql('SELECT max(id) FROM test') + 1},${localStorage.getItem([0].first_name)},${localStorage.getItem([0].last_name)},${localStorage.getItem([0].email)},${localStorage.getItem([0].country)})`);
 //     }

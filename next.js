@@ -6,10 +6,11 @@ let info = {
   firstName: localStorage.getItem('first_name'),
   lastName: localStorage.getItem('last_name'),
 };
+let list;
 if(list.length > 0){
   list.push(info)}
 else{
-  let list = [];}
+  list = [];}
 
 
 // [...document.querySelectorAll('button')].forEach(function(item) {

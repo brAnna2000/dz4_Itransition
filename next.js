@@ -18,4 +18,3 @@ let info = {
 // [...document.querySelectorAll('button')].forEach(function(item) {
 //     item.addEventListener('click', sending);
 // });
-console.log(list);

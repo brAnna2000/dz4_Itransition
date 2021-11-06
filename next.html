@@ -14,6 +14,7 @@
             <p>Bro!</p>
             <p>Sent by Fedya at 11:54</p>
             <button>Bro!</button> 
+            
         </div>
         <div class="container">
             <p>Sis!</p>
@@ -21,9 +22,16 @@
             <button>Sis!</button>
         </div>
     </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="next.js"></script>
     <script src="jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alasql@1.7"></script>
+    <script src="alasql.js"></script>
+<script>
+    alasql("CREATE TABLE test (id INT, firstName STRING, lastName STRING, email STRING, country STRING)");
+    alasql("INSERT INTO test VALUES (1,'Олег','Сульжич','olegsulzich@gmail.com','Беларусь')");
+    alasql("INSERT INTO test VALUES (2,'Вероника','Иодковская','veronikaiodkovskaya@gmail.com','Беларусь')");
+    console.log( alasql("SELECT * FROM test") );
+</script>
 </body>
 </html>

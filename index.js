@@ -17,7 +17,7 @@ function preview(token){
                     country: data.country,
                 }
                 fn.push(a);
-                localStorage.setItem('values', fn);
+                localStorage.setItem('values', JSON.stringify(fn));
             }
             else{
                 let a = {
@@ -27,7 +27,7 @@ function preview(token){
                     country: data.country,
                 }
                 fn.push(a);
-                localStorage.setItem('values', fn);
+                localStorage.setItem('values', JSON.stringify(fn));
             }
 //             localStorage.setItem('first_name', data.first_name);
 //             localStorage.setItem('last_name', data.last_name);

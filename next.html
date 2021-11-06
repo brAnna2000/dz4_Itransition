@@ -28,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alasql@1.7"></script>
     <script src="alasql.js"></script>
 <script>
-    console.log(alasql("show tables like test"));
+    console.log(alasql("SHOW TABLES LIKE test"));
     if (alasql("SELECT * FROM test").length > 0){
         alasql(`INSERT INTO test VALUES (${alasql('SELECT max(id) FROM test') + 1},${localStorage.getItem(first_name)},${localStorage.getItem(last_name)},${localStorage.getItem(email)},${localStorage.getItem(country)})`);
     }

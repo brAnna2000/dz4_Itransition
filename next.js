@@ -7,7 +7,7 @@ let info = {
   lastName: localStorage.getItem('last_name'),
 };
 let list;
-if(list.length > 0){
+if(list != undefined){
   list.push(info)}
 else{
   list = [];

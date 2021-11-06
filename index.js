@@ -9,21 +9,23 @@ function preview(token){
                 c = JSON.parse(c);
                 console.log(c);
                 fn = c;
-                fn.push({
+                let a = {
                     first_name: data.first_name,
                     last_name: data.last_name,
                     email: data.email,
                     country: data.country,
-                })
+                }
+                fn.push(a);
                 localStorage.setItem('values', fn);
             }
             else{
-                fn.push({
+                let a = {
                     first_name: data.first_name,
                     last_name: data.last_name,
                     email: data.email,
                     country: data.country,
-                })
+                }
+                fn.push(a);
                 localStorage.setItem('values', fn);
             }
 //             localStorage.setItem('first_name', data.first_name);

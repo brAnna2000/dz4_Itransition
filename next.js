@@ -6,13 +6,13 @@ let info = {
   firstName: localStorage.getItem('first_name'),
   lastName: localStorage.getItem('last_name'),
 };
-let list;
-if(list != undefined){
-  list.push(info)}
-else{
-  list = [];
-  list.push(info);
-}
+// let list;
+// if(list != undefined){
+//   list.push(info)}
+// else{
+//   list = [];
+//   list.push(info);
+// }
 
 
 // [...document.querySelectorAll('button')].forEach(function(item) {

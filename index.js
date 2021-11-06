@@ -1,4 +1,4 @@
-console.log(alasql("SELECT * FROM test"));
+// console.log(alasql("SELECT * FROM test"));
 
 function preview(token){
     $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){

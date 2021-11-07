@@ -12,7 +12,7 @@ else if (localStorage.getItem('sis') !== null){
       let b = JSON.parse(localStorage.getItem('values'));
       let time = new Date();
         console.log(item);
-      if(item.innerHTML == 'bro'){
+      if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', JSON.stringify(b[b.length-1].first_name));
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));
       }

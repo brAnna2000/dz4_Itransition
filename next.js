@@ -1,6 +1,7 @@
 let text1 = document.getElementById('text1');
 let text2 = document.getElementById('text2');
 if (localStorage.getItem('bro') !== null){
+    console.log(JSON.parse(localStorage.getItem('bro')))
     text1.textContent = JSON.parse(localStorage.getItem('bro'));
 }
 if (localStorage.getItem('sis') !== null){

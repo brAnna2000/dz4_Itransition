@@ -5,6 +5,7 @@ function preview(token){
             let fn = [];
             
             if (localStorage.getItem('values') !== null){
+                console.log('hi1');
                 c = localStorage.getItem('values');
                 c = JSON.parse(c);
                 console.log(c);
@@ -28,6 +29,7 @@ function preview(token){
                 localStorage.setItem('values', JSON.stringify(fn));
             }
             else{
+                console.log('hi');
                 let a = {
                     first_name: data.first_name,
                     last_name: data.last_name,

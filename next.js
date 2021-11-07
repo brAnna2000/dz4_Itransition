@@ -10,8 +10,10 @@ if (localStorage.getItem('sis') !== null){
 [...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {
       let b = JSON.parse(localStorage.getItem('values'));
+      let name = b[b.length - 1].first_name;
+      let email = b[b.length - 1].email;
       let time = new Date();
-      console.log(JSON.stringify(b[b.length-1]));
+      console.log(name, email);
       if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', JSON.stringify(b[b.length-1].first_name));
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));

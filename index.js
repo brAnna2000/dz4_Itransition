@@ -1,6 +1,7 @@
 function preview(token){
     $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){
         data = $.parseJSON(data.toString());
+        localStorage.setItem('enter','enter')
         if(!data.error){
             let fn = [];
             

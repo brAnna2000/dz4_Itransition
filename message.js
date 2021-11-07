@@ -3,6 +3,8 @@ let message = document.getElementById('message');
 let exit = document.querySelector('.exit');
 exit.addEventListener('click', function() {
     window.location.href = 'index.html';
+    localStorage.setItem('broClick',0);
+    localStorage.setItem('sisClick',0);
 });
 
 if(localStorage.getItem('broClick')==1){

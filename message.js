@@ -9,7 +9,7 @@ if(localStorage.getItem('broClick')==1){
     author.textContent = localStorage.getItem('bro') + " " + localStorage.getItem('broSurname') + ' at ' + JSON.parse(localStorage.getItem('timeBro'));
     message.textContent = "Bro!"; 
 }
-else{
+else if(localStorage.getItem('sisClick')==1){
     author.textContent = localStorage.getItem('sis') + " " + localStorage.getItem('sisSurname') + ' at ' + JSON.parse(localStorage.getItem('timeSis'));
-    message.textContent = "Bro!";
+    message.textContent = "Sis!";
 }

@@ -1,5 +1,9 @@
 let text1 = document.getElementById('text1');
 let text2 = document.getElementById('text2');
+let exit = document.getElementsByClassName('.exit');
+exit[0].addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
 
 text1.addEventListener('click', function() {
     localStorage.setItem('broClick',1);

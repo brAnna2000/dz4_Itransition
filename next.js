@@ -1,8 +1,7 @@
 let text1 = document.getElementById('text1');
 let text2 = document.getElementById('text2');
-let exit = document.getElementsByClassName('.exit');
-console.log(exit)
-exit[0].addEventListener('click', function() {
+let exit = document.querySelector('.exit');
+exit.addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 

@@ -2,10 +2,11 @@ let text1 = document.getElementById('text1');
 let text2 = document.getElementById('text2');
 console.log(JSON.parse(localStorage.getItem('bro')))
 if (localStorage.getItem('bro') !== null){
-    
+    console.log(JSON.parse(localStorage.getItem('bro')))
     text1.textContent = JSON.parse(localStorage.getItem('bro'));
 }
 else if (localStorage.getItem('sis') !== null){
+    console.log(JSON.parse(localStorage.getItem('sis')))
     text2.textContent = JSON.parse(localStorage.getItem('sis'));
 }
 [...document.querySelectorAll('button')].forEach(function(item) {

@@ -10,7 +10,8 @@ text1.addEventListener('click', function() {
     if(localStorage.getItem('bro') == null){
        localStorage.setItem('bro','Fedya'); 
        localStorage.setItem('broSurname','Great');
-       localStorage.setItem('timeBro','11:54'); 
+       let date = new Date(2021,01,01,11,54);
+       localStorage.setItem('timeBro',JSON.stringify(date.getHours()+ ':' + date.getMinutes())); 
     }
     else{
         text1=text1;
@@ -22,7 +23,8 @@ text2.addEventListener('click', function() {
     if(localStorage.getItem('sis') == null){
        localStorage.setItem('sis','Masha'); 
        localStorage.setItem('sisSurname','Beauty');
-       localStorage.setItem('timeSis','20:00'); 
+       let date = new Date(2021,01,01,20,00);
+       localStorage.setItem('timeBro',JSON.stringify(date.getHours()+ ':' + date.getMinutes())); 
     }
     else{
         text1=text1;

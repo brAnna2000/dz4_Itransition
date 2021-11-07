@@ -22,7 +22,6 @@ if (localStorage.getItem('sis') !== null){
       let name = b[b.length - 1].first_name;
       let surname = b[b.length - 1].last_name;
       let time = new Date();
-      console.log(name, email);
       if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', name);
         localStorage.setItem('broSurname', surname);

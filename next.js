@@ -11,6 +11,7 @@ if (localStorage.getItem('sis') !== null){
     item.addEventListener('click', function() {
       let b = JSON.parse(localStorage.getItem('values'));
       let time = new Date();
+      console.log(JSON.stringify(b[b.length-1]));
       if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', JSON.stringify(b[b.length-1].first_name));
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));

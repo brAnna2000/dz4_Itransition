@@ -8,7 +8,7 @@ function preview(token){
                 c = localStorage.getItem('values');
                 c = JSON.parse(c);
                 console.log(c);
-                for(i=0;i<c.length<i++){
+                for(i=0;i<c.length;i++){
                 if(data.email !== c[i].email){
                    data.email}
                 else{

@@ -4,7 +4,7 @@ function preview(token){
         localStorage.setItem('enter','enter')
         if(!data.error){
             let fn = [];
-            
+            console.log(localStorage.getItem('values'));
             if (localStorage.getItem('values') !== null){
                 console.log('hi1');
                 c = localStorage.getItem('values');

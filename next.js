@@ -10,7 +10,7 @@ text1.addEventListener('click', function() {
     if(localStorage.getItem('bro') == null){
        localStorage.setItem('bro','Fedya'); 
        localStorage.setItem('broSurname','Great');
-       let date = new Date(2021,01,01,11,54);
+       let date = new Date('2021','01','01','11','54');
        localStorage.setItem('timeBro',JSON.stringify(date.getHours() + ':' + date.getMinutes())); 
     }
     else{

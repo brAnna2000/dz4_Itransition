@@ -1,14 +1,22 @@
-// console.log(alasql("SELECT * FROM test"));
-
 function preview(token){
     $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){
         data = $.parseJSON(data.toString());
         if(!data.error){
             let fn = [];
+            
             if (localStorage.getItem('values') !== null){
                 c = localStorage.getItem('values');
                 c = JSON.parse(c);
                 console.log(c);
+                for(i=0;i<c.length<i++){
+                if(data.email !== c[i].email){
+                   data.email}
+                else{
+                    alert("Привет, "+data.first_name+" "+data.last_name+"!"); 
+                    window.location.href = 'next.html';
+                    return
+                }
+                }
                 fn = c;
                 let a = {
                     first_name: data.first_name,
@@ -29,15 +37,8 @@ function preview(token){
                 fn.push(a);
                 localStorage.setItem('values', JSON.stringify(fn));
             }
-//             localStorage.setItem('first_name', data.first_name);
-//             localStorage.setItem('last_name', data.last_name);
-//             localStorage.setItem('email', data.email);
-//             localStorage.setItem('country', data.country);
             alert("Привет, "+data.first_name+" "+data.last_name+"!");
-//             console.log(data);
         }
     });
     window.location.href = 'next.html';
 }
-// let div = document.getElementById('uLogin_33673656');
-// div.addEventListener('click', preview);

@@ -11,6 +11,7 @@ text2.addEventListener('click', function() {
 });
 
 if (localStorage.getItem('bro') !== null){
+    console.log(localStorage.getItem('bro'))
     text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro').toString()) + " at " + JSON.parse(localStorage.getItem('timeBro'));
 }
 if (localStorage.getItem('sis') !== null){

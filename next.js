@@ -5,7 +5,7 @@ if (localStorage.getItem('bro') !== null){
     text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro')) + " at " + JSON.parse(localStorage.getItem('timeBro'));
 }
 else if (localStorage.getItem('sis') !== null){
-    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis')) + " at " + JSON.parse(localStorage.getItem('timeSis'));
+    text2.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis')) + " at " + JSON.parse(localStorage.getItem('timeSis'));
 }
 [...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {

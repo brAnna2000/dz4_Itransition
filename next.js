@@ -5,7 +5,7 @@ if (localStorage.getItem('bro') !== null){
     
     text1.textContent = JSON.parse(localStorage.getItem('bro'));
 }
-if (localStorage.getItem('sis') !== null){
+else if (localStorage.getItem('sis') !== null){
     text2.textContent = JSON.parse(localStorage.getItem('sis'));
 }
 [...document.querySelectorAll('button')].forEach(function(item) {

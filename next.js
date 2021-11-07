@@ -15,11 +15,14 @@ if (localStorage.getItem('sis') !== null){
       let time = new Date();
       console.log(name, email);
       if(item.innerHTML == 'Bro!'){
-        localStorage.setItem('bro', JSON.stringify(b[b.length-1].first_name));
+        localStorage.setItem('bro', name);
+        localStorage.setItem('broEmail', email);
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));
+        
       }
       else{
-        localStorage.setItem('sis', JSON.stringify(b[b.length-1].first_name));
+        localStorage.setItem('sis', name);
+        localStorage.setItem('sisEmail', email);
         localStorage.setItem('timeSis', JSON.stringify(time.getHours() + ':' + time.getMinutes()));  
       }
     });

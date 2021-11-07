@@ -16,13 +16,13 @@ if (localStorage.getItem('sis') !== null){
       console.log(name, email);
       if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', name);
-        localStorage.setItem('broEmail', surname);
+        localStorage.setItem('broSurname', surname);
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));
         
       }
       else{
         localStorage.setItem('sis', name);
-        localStorage.setItem('sisEmail', surname);
+        localStorage.setItem('sisSurname', surname);
         localStorage.setItem('timeSis', JSON.stringify(time.getHours() + ':' + time.getMinutes()));  
       }
     });

@@ -1,7 +1,7 @@
 let author = document.getElementById('author');
 let message = document.getElementById('message');
-let exit = document.getElementsByClassName('.exit');
-exit[0].addEventListener('click', function() {
+let exit = document.querySelector('.exit');
+exit.addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 

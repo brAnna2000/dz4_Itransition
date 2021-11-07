@@ -11,18 +11,18 @@ if (localStorage.getItem('sis') !== null){
     item.addEventListener('click', function() {
       let b = JSON.parse(localStorage.getItem('values'));
       let name = b[b.length - 1].first_name;
-      let email = b[b.length - 1].email;
+      let surname = b[b.length - 1].last_name;
       let time = new Date();
       console.log(name, email);
       if(item.innerHTML == 'Bro!'){
         localStorage.setItem('bro', name);
-        localStorage.setItem('broEmail', email);
+        localStorage.setItem('broEmail', surname);
         localStorage.setItem('timeBro', JSON.stringify(time.getHours() + ':' + time.getMinutes()));
         
       }
       else{
         localStorage.setItem('sis', name);
-        localStorage.setItem('sisEmail', email);
+        localStorage.setItem('sisEmail', surname);
         localStorage.setItem('timeSis', JSON.stringify(time.getHours() + ':' + time.getMinutes()));  
       }
     });

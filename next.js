@@ -1,6 +1,15 @@
 let text1 = document.getElementById('text1');
 let text2 = document.getElementById('text2');
 
+text1.addEventListener('click', function() {
+    localStorage.setItem('broClick',1);
+    window.location.href = 'message.html';
+});
+text2.addEventListener('click', function() {
+    localStorage.setItem('sisClick',1);
+    window.location.href = 'message.html';
+});
+
 if (localStorage.getItem('bro') !== null){
     text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro')) + " at " + JSON.parse(localStorage.getItem('timeBro'));
 }

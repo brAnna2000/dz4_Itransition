@@ -1,6 +1,10 @@
 let author = document.getElementById('author');
 let message = document.getElementById('message');
-console.log(localStorage.getItem('broClick'));
+let exit = document.getElementsByClassName('.exit');
+exit[0].addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
+
 if(localStorage.getItem('broClick')==1){
     author.textContent = localStorage.getItem('bro') + " " + localStorage.getItem('broSurname') + ' at ' + JSON.parse(localStorage.getItem('timeBro'));
     message.textContent = "Bro!"; 

@@ -11,10 +11,10 @@ text2.addEventListener('click', function() {
 });
 
 if (localStorage.getItem('bro') !== null){
-    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro')) + " at " + JSON.parse(localStorage.getItem('timeBro'));
+    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro').toString()) + " at " + JSON.parse(localStorage.getItem('timeBro'));
 }
 if (localStorage.getItem('sis') !== null){
-    text2.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis')) + " at " + JSON.parse(localStorage.getItem('timeSis'));
+    text2.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis').toString()) + " at " + JSON.parse(localStorage.getItem('timeSis'));
 }
 [...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {

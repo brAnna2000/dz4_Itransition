@@ -3,11 +3,11 @@ let text2 = document.getElementById('text2');
 console.log(JSON.parse(localStorage.getItem('bro')))
 if (localStorage.getItem('bro') !== null){
     console.log(JSON.parse(localStorage.getItem('bro')));
-    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro')) + "at " + JSON.parse(localStorage.getItem('timeBro'));
+    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('bro')) + " at " + JSON.parse(localStorage.getItem('timeBro'));
 }
 else if (localStorage.getItem('sis') !== null){
     console.log(JSON.parse(localStorage.getItem('sis')))
-    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis')) + "at " + JSON.parse(localStorage.getItem('timeSis'));
+    text1.textContent = "Sent by "+ JSON.parse(localStorage.getItem('sis')) + " at " + JSON.parse(localStorage.getItem('timeSis'));
 }
 [...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {

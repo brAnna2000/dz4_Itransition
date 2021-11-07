@@ -23,7 +23,7 @@ text2.addEventListener('click', function() {
     if(localStorage.getItem('sis') == null){
        localStorage.setItem('sis','Masha'); 
        localStorage.setItem('sisSurname','Beauty');
-       let date = new Date(2021,01,01,20,00);
+       let date = new Date('2021','01','01','20','00');
        localStorage.setItem('timeBro',JSON.stringify(date.getHours() + ':' + date.getMinutes())); 
     }
     else{

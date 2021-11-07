@@ -6,11 +6,27 @@ exit.addEventListener('click', function() {
 });
 
 text1.addEventListener('click', function() {
-    localStorage.setItem('broClick',1);
+    localStorage.setItem('broClick',1); 
+    if(localStorage.getItem('bro') == null){
+       localStorage.setItem('bro','Fedya'); 
+       localStorage.setItem('broSurname','Great');
+       localStorage.setItem('timeBro','11:54'); 
+    }
+    else{
+        text1=text1;
+    }
     window.location.href = 'message.html';
 });
 text2.addEventListener('click', function() {
     localStorage.setItem('sisClick',1);
+    if(localStorage.getItem('sis') == null){
+       localStorage.setItem('sis','Masha'); 
+       localStorage.setItem('sisSurname','Beauty');
+       localStorage.setItem('timeSis','20:00'); 
+    }
+    else{
+        text1=text1;
+    }
     window.location.href = 'message.html';
 });
 

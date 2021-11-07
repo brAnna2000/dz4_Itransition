@@ -1,3 +1,11 @@
+let text1 = document.getElementById('text1');
+let text2 = document.getElementById('text2');
+if (localStorage.getItem('bro') !== null){
+    text1.textContent = JSON.parse(localStorage.getItem('bro'));
+}
+if (localStorage.getItem('sis') !== null){
+    text1.textContent = JSON.parse(localStorage.getItem('sis'));
+}
 [...document.querySelectorAll('button')].forEach(function(item) {
     item.addEventListener('click', function() {
       let b = JSON.parse(localStorage.getItem('values'));
